@@ -64,6 +64,13 @@ function putProjectById(req, res) {
   return res.json(projects);
 }
 
+// Get a project
+function getProjectById(req, res) {
+  const { id } = req.params;
+  const index = projects.findIndex(predicate => predicate.id == id);
+  return res.json(projects[index]);
+}
+
 // Add a task to a existing project
 function postTaskByProjectId(req, res) {
   const { id } = req.params;
@@ -76,6 +83,7 @@ function postTaskByProjectId(req, res) {
 
 // Routes
 server.get("/projects", getProjects);
+server.get("/projects/:id", verificaProjectId, getProjectById);
 server.put("/projects/:id", verificaProjectId, putProjectById);
 server.delete("/projects/:id", verificaProjectId, deleteProjectById);
 server.post("/projects", postProject);
