@@ -1,0 +1,27 @@
+{
+  "name": "GoCamp09-desafio01",
+  "version": "1.0.0",
+  "description": "GoCamp09 - desafio #01 - nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreporto/GoCamp09-desafio01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreporto/GoCamp09-desafio01/issues"
+  },
+  "homepage": "https://github.com/andreporto/GoCamp09-desafio01#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
